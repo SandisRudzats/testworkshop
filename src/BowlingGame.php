@@ -26,7 +26,7 @@ class BowlingGame
         $roll = 0;
 
         for ($frame = 0; $frame < 10; $frame++) {
-            $this->checkIfMinNumberOfRollsHaveBeenMade($roll);
+            $this->checkIfMinNumberOfRollsHaveBeenMade();
 
             if ($this->isInvalidRoll($roll)) {
                 throw new InvalidArgumentException('Are you trying to resurrect a pin?');
@@ -49,7 +49,7 @@ class BowlingGame
             $score += $this->getNormalScore($roll);
             $roll += 2;
         }
-        $this->checkIfTooManyRollsHaveBeenMade($roll);
+        $this->checkIfTooManyRollsHaveBeenMade();
 
         return $score;
     }
@@ -99,17 +99,28 @@ class BowlingGame
         return $this->rolls[$roll] === 10;
     }
 
-    private function isInvalidRoll(int $roll)
+    /**
+     * @param int $roll
+     * @return bool
+     */
+    private function isInvalidRoll(int $roll): bool
     {
         return $this->rolls[$roll] === -1;
     }
 
-    private function isMaxPinLimitReached(int $roll)
+    /**
+     * @param int $roll
+     * @return bool
+     */
+    private function isMaxPinLimitReached(int $roll): bool
     {
         return $this->rolls[$roll] === 11;
     }
 
-    private function checkIfMinNumberOfRollsHaveBeenMade(int $roll)
+    /**
+     * @param int $roll
+     */
+    private function checkIfMinNumberOfRollsHaveBeenMade()
     {
         $minimumRollCount = 11;
         $rollsCount = count($this->rolls);
@@ -118,7 +129,10 @@ class BowlingGame
         }
     }
 
-    private function checkIfTooManyRollsHaveBeenMade(int $roll)
+    /**
+     * @param int $roll
+     */
+    private function checkIfTooManyRollsHaveBeenMade()
     {
         $maximumRollCount = 20;
         $rollsCount = count($this->rolls);
