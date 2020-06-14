@@ -13,6 +13,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
@@ -75,6 +78,7 @@
       <workItem from="1592138693751" duration="14000" />
       <workItem from="1592138727131" duration="35000" />
       <workItem from="1592138777019" duration="25000" />
+      <workItem from="1592138820075" duration="314000" />
     </task>
     <servers />
   </component>
