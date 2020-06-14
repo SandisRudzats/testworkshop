@@ -86,6 +86,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="532" y="1181" key="CommitChangelistDialog2" timestamp="1592139204515">
+      <screen x="114" y="1103" width="1680" height="952" />
+    </state>
+    <state x="532" y="1181" key="CommitChangelistDialog2/0.23.1920.1057/114.1103.1680.952@114.1103.1680.952" timestamp="1592139204515" />
     <state x="664" y="333" key="NewPhpClassDialog" timestamp="1592138748039">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -94,5 +98,9 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="775" y="440" key="NewPhpFileDialog/0.23.1920.1057/114.1103.1680.952@0.23.1920.1057" timestamp="1592138759418" />
+    <state x="554" y="1319" key="Vcs.Push.Dialog.v2" timestamp="1592139318278">
+      <screen x="114" y="1103" width="1680" height="952" />
+    </state>
+    <state x="554" y="1319" key="Vcs.Push.Dialog.v2/0.23.1920.1057/114.1103.1680.952@114.1103.1680.952" timestamp="1592139318278" />
   </component>
 </project>
